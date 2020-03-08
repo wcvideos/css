@@ -1,0 +1,556 @@
+@charset "UTF-8";
+html {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  font-size: 26.66666667vw;
+  font-family: "冬青黑体", helvetica, arial, sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+menu,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+form,
+button,
+input,
+textarea,
+select,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: .13rem;
+}
+
+a {
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+}
+
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  color: #adaada;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+div:after,
+ul:after,
+div::after,
+ul::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+video {
+  width: 100%;
+  height: 2.3rem;
+}
+
+input {
+  background-color: inherit;
+}
+
+input::input-placeholder,
+textarea::input-placeholder {
+  color: #69678e;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #69678e;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #69678e;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #69678e;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #69678e;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select {
+  outline: none;
+  text-decoration: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+option::-ms-expand {
+  display: none;
+}
+
+option {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari 和 Chrome */
+  appearance: none;
+}
+
+.none {
+  display: none !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.inline {
+  display: inline;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.col {
+  margin-right: 0 !important;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.body-fixed {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+}
+
+.common-tip {
+  position: fixed;
+  z-index: 2000;
+  line-height: .2rem;
+  padding: .12rem;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+}
+
+/*背景色*/
+.bg-commen {
+  background-color: #27263d !important;
+}
+
+/*字体色*/
+.text-common {
+  color: #adaada !important;
+}
+
+.text-red {
+  color: #ef1f46 !important;
+}
+
+.text-yellow-green {
+  color: #d0ff00 !important;
+}
+
+.text-green {
+  color: #05ff98 !important;
+}
+
+.text-gray {
+  color: #69678e !important;
+}
+
+/*图标*/
+.icon {
+  display: inline-block;
+}
+
+.close-icon {
+  background: url("../img/icon/close.png") no-repeat center;
+  background-size: 100%;
+}
+
+.login-logo-icon {
+  background: url("../img/other/login_logo.png") no-repeat center;
+  background-size: 100%;
+}
+
+.user-icon {
+  background: url("../img/icon/ID.png") no-repeat center;
+  background-size: 100%;
+}
+
+.password-icon {
+  background: url("../img/icon/password.png") no-repeat center;
+  background-size: 100%;
+}
+
+.save-icon {
+  background: url("../img/icon/save.png") no-repeat center;
+  background-size: 100%;
+}
+
+.email-icon {
+  background: url("../img/icon/email.png") no-repeat center;
+  background-size: 100%;
+}
+
+.tip-wrong-icon {
+  background: url("../img/icon/zhuyi.png") no-repeat center;
+  background-size: 100%;
+}
+
+.page-logo-icon {
+  background: url("../img/other/page_logo.png") no-repeat center;
+  background-size: 100%;
+}
+
+.index-user-icon {
+  background: url("../img/icon/nav_user.png") no-repeat center;
+  background-size: 100%;
+}
+
+.index-search-icon {
+  background: url("../img/icon/sousuo.png") no-repeat center;
+  background-size: 100%;
+}
+
+.index-class-icon {
+  background: url("../img/icon/fenlei_index.png") no-repeat center;
+  background-size: 100%;
+}
+
+.nav-sanjiao-icon {
+  background: url("../img/icon/xiangxia.png") no-repeat center;
+  background-size: 100%;
+}
+
+.man-icon {
+  background: url("../img/icon/man.png") no-repeat center;
+  background-size: 100%;
+}
+
+.woman-icon {
+  background: url("../img/icon/wm.png") no-repeat center;
+  background-size: 100%;
+}
+
+.nav-grzx-icon {
+  background: url("../img/icon/zhongxin.png") no-repeat center;
+  background-size: 100%;
+}
+
+.nav-home-page-icon {
+  background: url("../img/icon/zhuye.png") no-repeat center;
+  background-size: 100%;
+}
+
+.nav-vod-upload-icon {
+  background: url("../img/icon/upload_vod.png") no-repeat center;
+  background-size: 100%;
+}
+
+.nav-tuichu-icon {
+  background: url("../img/icon/tuichu.png") no-repeat center;
+  background-size: 100%;
+}
+
+.title-vod-icon {
+  background: url("../img/icon/shipin.png") no-repeat center;
+  background-size: 100%;
+}
+
+.title-img-icon {
+  background: url("../img/icon/meitu.png") no-repeat center;
+  background-size: 100%;
+}
+
+.title-news-icon {
+  background: url("../img/icon/zixun.png") no-repeat center;
+  background-size: 100%;
+}
+
+.free-label-icon {
+  background: url("../img/other/mianfei.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pay-label-icon {
+  background: url("../img/other/fufei.png") no-repeat center;
+  background-size: 100%;
+}
+
+.vip-label-icon {
+  background: url("../img/other/huiyuan.png") no-repeat center;
+  background-size: 100%;
+}
+
+.add-white-icon {
+  background: url("../img/icon/add_white.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pop-tip-icon {
+  background: url("../img/icon/gantan.png") no-repeat center;
+  background-size: 100%;
+}
+
+.jiantou-icon {
+  background: url("../img/icon/xia.png") no-repeat center;
+  background-size: 100%;
+}
+
+.jiantou-icon.active {
+  background: url("../img/icon/shang.png") no-repeat center;
+  background-size: 100%;
+}
+
+.info-class-icon {
+  background: url("../img/icon/fenlei.png") no-repeat center;
+  background-size: 100%;
+}
+
+.info-bf-icon {
+  background: url("../img/icon/bofang.png") no-repeat center;
+  background-size: 100%;
+}
+
+.info-day-icon {
+  background: url("../img/icon/riqi.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pl_del_icon {
+  background: url("../img/icon/delete.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pl_jubao_icon {
+  background: url("../img/icon/jubao.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pl_hf_icon {
+  background: url("../img/icon/huiuf.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pl_dz_icon {
+  background: url("../img/icon/dz.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pl_dz_icon.active {
+  background: url("../img/icon/dz_active.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pl-gift-icon {
+  background: url("../img/other/liwu.png") no-repeat center;
+  background-size: 100%;
+}
+
+.pl-cz-icon {
+  background: url("../img/other/chongzhi.png") no-repeat center;
+  background-size: 100%;
+}
+
+.write-icon {
+  background: url("../img/icon/pl.png") no-repeat center;
+  background-size: 100%;
+}
+
+.info-see-icon {
+  background: url("../img/icon/liulan.png") no-repeat center;
+  background-size: 100%;
+}
+
+.center-white-turn-right-icon {
+  background: url("../img/icon/xiangzuob.png") no-repeat center;
+  background-size: 100%;
+}
+
+.center-page-vod-icon {
+  background: url("../img/icon/sp.png") no-repeat center;
+  background-size: 100%;
+}
+
+.center-page-news-icon {
+  background: url("../img/icon/zx.png") no-repeat center;
+  background-size: 100%;
+}
+
+.center-page-img-icon {
+  background: url("../img/icon/pt.png") no-repeat center;
+  background-size: 100%;
+}
+
+.center-page-recharge-icon {
+  background: url("../img/icon/cz.png") no-repeat center;
+  background-size: 100%;
+}
+
+.center-page-money-icon {
+  background: url("../img/icon/cwgl.png") no-repeat center;
+  background-size: 100%;
+}
+
+.center-page-info-icon {
+  background: url("../img/icon/xgzl.png") no-repeat center;
+  background-size: 100%;
+}
+
+.center-select-sanjiao-icon {
+  background: url("../img/icon/xiangxia.png") no-repeat center;
+  background-size: 100%;
+}
+
+.delete-img-icon {
+  background: url("../img/icon/gb.png") no-repeat center;
+  background-size: 100%;
+}
+
+.dashang-sanjiao-icon {
+  background: url("../img/icon/sanjiao.png") no-repeat center;
+  background-size: 100%;
+}
+
+.zfb-icon {
+  background: url("../img/icon/zfb.png") no-repeat center;
+  background-size: 100%;
+}
+
+.weixin-icon {
+  background: url("../img/icon/wx.png") no-repeat center;
+  background-size: 100%;
+}
+
+.yue-icon {
+  background: url("../img/icon/ye.png") no-repeat center;
+  background-size: 100%;
+}
+
+.radio-select-icon {
+  background: url("../img/icon/wd.png") no-repeat center;
+  background-size: 100%;
+}
+
+.radio-select-icon.active {
+  background: url("../img/icon/dag.png") no-repeat center;
+  background-size: 100%;
+}
+
+.tip-right-sanjiao-icon {
+  background: url("../img/icon/jt.png") no-repeat center;
+  background-size: 100%;
+}
+
+.clear-word-icon {
+  background: url("../img/icon/clear.png") no-repeat center;
+  background-size: 100%;
+}
+
+.sc-icon {
+  background: url("../img/icon/shoucang.png") no-repeat center;
+  background-size: 100%;
+}
+
+.sc-icon.active {
+  background: url("../img/icon/shoucang_active.png") no-repeat center;
+  background-size: 100%;
+}
