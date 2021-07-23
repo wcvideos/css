@@ -210,7 +210,7 @@
   margin-right: .06rem;
   width: .65rem;
   height: .25rem;
-  background-color: #383759;
+  background-color: #8b42f6;
   border-radius: .02rem;
   text-align: center;
   line-height: .25rem;
@@ -218,7 +218,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: .13rem;
-  color: #cccaef;
+  color: #ffffff;
 }
 
 .index-page-class-box .data:nth-child(5n) {
